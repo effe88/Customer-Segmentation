@@ -1,0 +1,8 @@
+# Ignore all files in the Downloads directory
+*
+
+# But do not ignore the following files
+!README2.md
+!segmentation.py
+!"Online Retail.xlsx - Online Retail.csv"
+!.gitignore
