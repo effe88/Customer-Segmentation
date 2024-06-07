@@ -1,0 +1,48 @@
+## Project Analysis and Insights
+
+### Project Objective
+The objective of this project is to perform customer segmentation on an Online Retail dataset using K-means clustering. The data is analyzed to identify spending patterns across different countries, allowing for targeted marketing strategies.
+
+### Data
+The dataset used is "Online Retail.xlsx - Online Retail.csv", which contains the following fields:
+- InvoiceNo
+- StockCode
+- Description
+- Quantity
+- InvoiceDate
+- UnitPrice
+- CustomerID
+- Country
+
+### Methodology
+1. **Data Cleaning**: The dataset was cleaned by removing rows with missing `CustomerID` values and filtering out negative or zero quantities and unit prices.
+2. **Feature Engineering**: A new feature, `TotalAmount`, was created by multiplying `Quantity` and `UnitPrice`.
+3. **Segmentation**: K-means clustering was applied to segment customers based on their `TotalAmount` and `Country`.
+   - The optimal number of clusters (k) was determined using the elbow method and silhouette score.
+   - The final segmentation was performed with k=3, identifying three spending segments: Low Spenders, Moderate Spenders, and High Spenders.
+
+### Insights
+1. **Spending Distribution**: 
+   - The majority of customers fall into the "Low Spenders" category.
+   - There are significant differences in spending patterns between countries.
+2. **Country Analysis**: 
+   - The United Kingdom has the highest number of customers, predominantly low spenders.
+   - Other countries like Germany, France, and the Netherlands also show distinct spending patterns.
+3. **Visualization**: 
+   - Pie charts were used to visualize the distribution of spending segments per country.
+   - Bar charts and box plots highlighted the differences in spending amounts among the segments.
+
+### Recommendations
+1. **Targeted Marketing**: 
+   - Develop tailored marketing strategies for each spending segment to maximize customer engagement and sales.
+   - Focus on increasing the spending of "Low Spenders" through personalized offers and promotions.
+2. **Country-Specific Strategies**: 
+   - Customize marketing campaigns based on the spending behavior of customers in different countries.
+   - Consider launching country-specific promotions and discounts to boost sales.
+3. **Future Analysis**: 
+   - Further analyze the product preferences and buying behavior of each segment to refine marketing strategies.
+   - Monitor the impact of marketing campaigns on customer spending and adjust strategies accordingly.
+
+### Conclusion
+This customer segmentation analysis provides valuable insights into spending patterns across different countries. By leveraging these insights, businesses can develop targeted marketing strategies to enhance customer engagement and drive sales growth.
+
